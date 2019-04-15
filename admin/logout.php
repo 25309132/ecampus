@@ -1,0 +1,11 @@
+<?php
+session_start();
+unset($_SESSION['SESSION_PHONE']);
+unset($_SESSION['SESSION_UGID']);
+unset($_SESSION['SESSION_EMAIL']);
+unset($_SESSION['SESSION_UNAME']);
+unset($_SESSION['SESSION_NAMES']);
+unset($_SESSION['UID_Session']);
+session_destroy();
+header('location:../index');
+?>

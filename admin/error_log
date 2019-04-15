@@ -1,0 +1,42 @@
+[24-Sep-2018 09:14:44 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host 'DB_HOST' (0)' in /home/alpha/public_html/system/admin/sys/core/init.inc.php:25
+Stack trace:
+#0 /home/alpha/public_html/system/admin/sys/core/init.inc.php(25): PDO->__construct('mysql:host=DB_H...', 'DB_USER', 'DB_PASS')
+#1 /home/alpha/public_html/system/admin/index.php(14): include_once('/home/alpha/pub...')
+#2 {main}
+  thrown in /home/alpha/public_html/system/admin/sys/core/init.inc.php on line 25
+[24-Sep-2018 09:15:48 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host 'DB_HOST' (0)' in /home/alpha/public_html/system/admin/sys/core/init.inc.php:25
+Stack trace:
+#0 /home/alpha/public_html/system/admin/sys/core/init.inc.php(25): PDO->__construct('mysql:host=DB_H...', 'DB_USER', 'DB_PASS')
+#1 /home/alpha/public_html/system/admin/index.php(14): include_once('/home/alpha/pub...')
+#2 {main}
+  thrown in /home/alpha/public_html/system/admin/sys/core/init.inc.php on line 25
+[24-Sep-2018 09:17:15 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host 'DB_HOST' (0)' in /home/alpha/public_html/system/admin/sys/core/init.inc.php:25
+Stack trace:
+#0 /home/alpha/public_html/system/admin/sys/core/init.inc.php(25): PDO->__construct('mysql:host=DB_H...', 'DB_USER', 'DB_PASS')
+#1 /home/alpha/public_html/system/admin/index.php(14): include_once('/home/alpha/pub...')
+#2 {main}
+  thrown in /home/alpha/public_html/system/admin/sys/core/init.inc.php on line 25
+[24-Sep-2018 09:17:32 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host 'DB_HOST' (0)' in /home/alpha/public_html/system/admin/sys/core/init.inc.php:25
+Stack trace:
+#0 /home/alpha/public_html/system/admin/sys/core/init.inc.php(25): PDO->__construct('mysql:host=DB_H...', 'DB_USER', 'DB_PASS')
+#1 /home/alpha/public_html/system/admin/index.php(14): include_once('/home/alpha/pub...')
+#2 {main}
+  thrown in /home/alpha/public_html/system/admin/sys/core/init.inc.php on line 25
+[24-Sep-2018 09:18:18 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host 'DB_HOST' (0)' in /home/alpha/public_html/system/admin/sys/core/init.inc.php:25
+Stack trace:
+#0 /home/alpha/public_html/system/admin/sys/core/init.inc.php(25): PDO->__construct('mysql:host=DB_H...', 'DB_USER', 'DB_PASS')
+#1 /home/alpha/public_html/system/admin/index.php(14): include_once('/home/alpha/pub...')
+#2 {main}
+  thrown in /home/alpha/public_html/system/admin/sys/core/init.inc.php on line 25
+[24-Sep-2018 09:18:53 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host 'DB_HOST' (0)' in /home/alpha/public_html/system/admin/sys/core/init.inc.php:25
+Stack trace:
+#0 /home/alpha/public_html/system/admin/sys/core/init.inc.php(25): PDO->__construct('mysql:host=DB_H...', 'DB_USER', 'DB_PASS')
+#1 /home/alpha/public_html/system/admin/index.php(14): include_once('/home/alpha/pub...')
+#2 {main}
+  thrown in /home/alpha/public_html/system/admin/sys/core/init.inc.php on line 25
+[24-Sep-2018 09:19:35 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host 'DB_HOST' (0)' in /home/alpha/public_html/system/admin/sys/core/init.inc.php:25
+Stack trace:
+#0 /home/alpha/public_html/system/admin/sys/core/init.inc.php(25): PDO->__construct('mysql:host=DB_H...', 'DB_USER', 'DB_PASS')
+#1 /home/alpha/public_html/system/admin/index.php(14): include_once('/home/alpha/pub...')
+#2 {main}
+  thrown in /home/alpha/public_html/system/admin/sys/core/init.inc.php on line 25

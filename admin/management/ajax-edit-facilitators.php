@@ -1,0 +1,161 @@
+<?php
+//error_reporting(0);
+include_once('../sys/core/init.inc.php');
+$common=new common();
+
+// Retrieve course status
+if(filter_has_var(INPUT_GET, "getFacilitatorId")) {
+    $getFacilitatorId = $_REQUEST['getFacilitatorId'];
+    $GetPC = $common->GetRows("SELECT c.* FROM tbl_programme_facilitators c WHERE `c`.`id` = '{$getFacilitatorId}' "); 
+    foreach ($GetPC as $gsdata) 
+    {
+        $get_facilitator_name = $gsdata['facilitator_name'];
+        $get_contacts = $gsdata['contacts'];
+        $getisActive= $gsdata['isActive'];
+    }
+}
+
+?>
+
+<style type="text/css">
+    label { margin-top: 10px; }
+    .help-inline-error{color:red;}
+</style>
+
+<!-- // Assign Form Variables -->
+<script type="text/javascript">
+    // Cancel Edit Button
+    $(".cancel_edit_btn").click(function(e) {
+        e.preventDefault();
+        $('#LoadModal').modal('hide'); 
+    });
+</script>
+
+<!--Start Update Form -->
+<form action="" method="post" id="UpdateCourseTypeFRM" name="UpdateCourseTypeFRM"> 
+<!--Start Subject Edit -->
+<fieldset>
+<div class="box-body">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label> Edit Facilitator Name </label>
+                <input type="text" class="form-control" name="EditFacilitatorName" id="EditFacilitatorName" placeholder="Edit Facilitator Name"  autocomplete="off" required value="<?php echo $get_facilitator_name; ?>">
+                <input type="hidden" class="form-control" name="Update_Facilitator_Name" id="Update_Facilitator_Name" value="<?php echo $getFacilitatorId; ?>">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label> Edit Contacts </label>
+                <input type="text" class="form-control" name="EditContacts" id="EditContacts" placeholder="Edit Contacts"  autocomplete="off" required value="<?php echo $get_contacts; ?>">
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="GetIsActive"> Status</label>
+            <div class="radio" style="margin-top:0px;">
+              <label for="optionsRadios1">
+                <input type="radio" name="GetIsActive" id="optionsRadios1" value="1" <?php if($getisActive == 1){ echo 'checked'; }; ?>>
+                Active &nbsp;&nbsp;&nbsp;
+              </label>
+              <label for="optionsRadios2">
+                <input type="radio" name="GetIsActive" id="optionsRadios2" value="0" <?php if($getisActive == 0){ echo 'checked'; }; ?>>
+                In-Active
+              </label>
+            </div>
+          </div>
+        </div>
+    </div><hr />
+    <div class="row">
+        <div class="col-lg-6">
+            <button class="btn btn-success w_full cancel_edit_btn"><i class="fa fa-cogs" data-dismiss="modal"></i> Cancel Edit </button>
+        </div>
+        <div class="col-lg-6 ">
+            <button type="submit" class="btn btn-danger w_full" name="UpdateSOTBLID" id="UpdateSOTBLID"><i class="fa fa-database"></i> Submit Changes </button>
+        </div>
+    </div>
+
+</div>
+
+</fieldset>
+<!--End Subject Edit -->
+</form>
+
+<!--Processing Submission -->
+<div class="col-lg-12 d_none"  id="EditLoading_ID">
+<center class=" r_corners m_top_20">
+    <h4 class="m_top_20 m_bottom_20">Please wait... Updating Course Type </h4>
+    <img src="../img/loading-bar.gif" class="img-thumbnail m_bottom_20" alt="Loading" style="max-width:160px;">
+</center>
+</div>
+<!--End Submission Processing -->
+
+<!--Alert Successful -->
+<div class="col-lg-12 EditStudentUpdateSuccessful d_none" style="margin: o auto;">
+<div class="alert alert-success alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+    <h4><i class="icon fa fa-database"></i> Course Type Successfully Updated!</h4>  
+</div>
+</div>
+<!--End Successful ALert -->
+
+<div class="modal-footer">
+    <div class="col-lg-12">
+        <center class="m_top_10">
+            &copy; <?php echo ucwords(strtolower($SystemRegisteredTo)); ?>
+        </center>
+    </div>
+</div>
+
+<!--End Students Update Form -->
+<script type="text/javascript" src="<?php echo ASSETS_URL; ?>dist/js/jquery.validate.js"></script>
+<script type="text/javascript">
+    jQuery().ready(function() {
+        var v = jQuery("#UpdateCourseTypeFRM").validate({         
+            rules: { 
+                EditCourseType: {
+                    required: true
+                }
+            }, 
+            errorElement: "span",
+            errorClass: "help-inline-error",
+        });
+
+        $(function () {
+            $(".select2").select2();
+        });
+    });
+</script>
+<script type="text/javascript">
+// Ajax Form Submission Starts
+$("form#UpdateCourseTypeFRM").submit(function(e){
+    e.preventDefault(); 
+        if($('#UpdateCourseTypeFRM').valid()) { 
+            $("#EditLoading_ID").show('fast');
+            $('#UpdateCourseTypeFRM').hide("fast"); 
+            var formData = new FormData($(this)[0]); 
+            $.ajax({
+                url: 'mm-ajax-configs.php',
+                type: 'POST',
+                data: formData,
+                async: true,
+                success: function () {
+                    window.setTimeout(close, 1000);
+                    window.setTimeout(closemodal, 2000);
+                    function close() {
+                        $("#EditLoading_ID").effect('explode');  
+                        $('.EditStudentUpdateSuccessful').show("fast");
+                    }
+                    function closemodal() {
+                        $('#LoadModal').modal('hide').effect('explode');
+                        $('.EditStudentUpdateSuccessful').hide("fast");
+                        $('#PeopleTableContainer').jtable('load'); // This Reloads JTable
+                    }
+                },
+                cache: false,
+                contentType: false,
+                processData: false
+            });
+        }
+});
+</script>
