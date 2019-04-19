@@ -212,7 +212,7 @@ foreach ($GetPC as $gsdata) {
                                                 <!--iMAGE-->
                                                 <img src="img/test/sam-12_140_100.jpg" alt="Proponents say Everyday Math adds up, though some don't understand how" title="Proponents say Everyday Math adds up, though some don't understand how" align="left">		  
                                                 <!--TITLE-->
-                                                <a class="ja-title" href="/index.php/news-and-events/103-proponents-say-everyday-math-adds-up-though-some-don-t-understand-how" style="font-family: vedana; font-size: 16px; margin-left: 10px; display: block;">Proponents say Everyday Math adds up, though some don't understand how</a>
+                                                <a class="ja-title" href="/index.php/news-and-events/103-proponents-say-everyday-math-adds-up-though-some-don-t-understand-how" style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; margin-left: 10px; display: block;">Proponents say Everyday Math adds up, though some don't understand how</a>
                                                 <!--CONTENT DATE-->
                                                 <br><span class="ja-createdate" style="font-size: 10px; color: #666666; margin-left: 10px;">Monday, 13 August 2012</span><br>
                                                 <br><p style=" font-family: serif; font-size: 14px; color: #333333; margin-left: 10px; display: block;">Vestibulum accumsan habitasse dictum id ut Curabitur amet libero mauris condimentum....</p>		  		  	  
