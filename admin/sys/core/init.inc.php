@@ -3,7 +3,7 @@ error_reporting(1);
 session_start();
 
 /*Getting root directory of the site*/
-define('SCHOOL_ROOT', $_SERVER["DOCUMENT_ROOT"]."/stars/admin/");
+define('SCHOOL_ROOT', $_SERVER["DOCUMENT_ROOT"]."/ecampus/admin/");
 
 /*
 * Include the necessary configuration info
@@ -21,7 +21,8 @@ define($name, $val);
 /*
 * Create a PDO object
 */
-$dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME;
+$dsn = "mysql:host=" . DB_HOST . ";port=" . DB_PORT . ";dbname=" . DB_NAME;
+
 $dbo = new PDO($dsn, DB_USER, DB_PASS);
 
 /*
