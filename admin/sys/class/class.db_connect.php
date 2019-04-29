@@ -28,7 +28,7 @@ class DB_Connect {
 		else
 			{
 				// Constants are defined in /sys/config/db-cred.inc.php and will be included
-				$dsn = "mysql:host=" . DB_HOST . ";port=" . DB_PORT . ";dbname=" . DB_NAME;
+				$dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME;
 				try
 					{
 						//Connect to the Database

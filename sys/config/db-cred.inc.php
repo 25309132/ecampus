@@ -8,20 +8,16 @@ $C = array();
 */
 $C['DB_HOST'] = 'localhost';
 /*
-* The database port
-*/
-$C['DB_PORT'] = '3309';
-/*
 * The database username
 */
-$C['DB_USER'] = 'Tosby';
+$C['DB_USER'] = 'elearnin_admin';
 /*
 * The database password
 */
-$C['DB_PASS'] = 'MasterTosby2';
+$C['DB_PASS'] = '0qqLvB8wmIhQ';
 /*
 /*
 * The name of the database to work with
 */
-$C['DB_NAME'] = 'ecampus';
+$C['DB_NAME'] = 'elearnin_ecampus_db';
 ?>

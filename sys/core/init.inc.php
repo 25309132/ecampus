@@ -3,7 +3,7 @@ error_reporting(1);
 session_start();
 
 /*Getting root directory of the site*/
-define('SCHOOL_ROOT', $_SERVER["DOCUMENT_ROOT"]."/ecampus/admin/");
+define('SCHOOL_ROOT', $_SERVER["DOCUMENT_ROOT"]."/stars/admin/");
 
 /*
 * Include the necessary configuration info
@@ -21,7 +21,7 @@ define($name, $val);
 /*
 * Create a PDO object
 */
-$dsn = "mysql:host=" . DB_HOST . ";port=" . DB_PORT . ";dbname=" . DB_NAME;
+$dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME;
 $dbo = new PDO($dsn, DB_USER, DB_PASS);
 
 /*
@@ -75,7 +75,7 @@ foreach($SysConfig AS $SysConf)
 // define("SITE_ROOT",	"http://localhost/dairycerp_test/");
 // define("ASSETS_URL", "http://localhost/dairycerp_test/assets/");
 
-define("SITE_ROOT", "/ecampus/");
+define("SITE_ROOT", "/stars/");
 
 define("ASSETS_URL", "../assets/");
 /*Date Diff*/

@@ -3,6 +3,7 @@
         <div class="mainmenu">
             <ul>
                 <li><a href="index"> Home </a></li>
+                <li><a href="About Us.php"> About Us </a></li>
                 <li><a href="programmes"> Programmes </a>
                     <!-- <ul class="submenu-mainmenu">
                         <li><a href="javascript:void();"><i class="fa fa-circle"></i>Course One<i class="fa fa-angle-right"></i></a>
@@ -32,9 +33,11 @@
                     </ul> -->
                 </li>
                 <!--<li><a href="moduleregistration">Module Registration</a></li>-->
-                <li><a href="admissions"> Fees </a></li>
-                <li><a href="http://www.maseno.ac.ke/index/" target="_blank"> Maseno University</a>
-                <li><a href="apply-now"> Apply Now!</a></li>
+                    <li><a href="Admissions.php"> Admissions </a></li>
+                    <li><a href="Fees.php"> Fees </a></li>
+                    <li><a href="https://elearning.maseno.ac.ke/"> e-Learning Portal </a></li>
+                    <li><a href="Contact Us.php"> Contact Us </a></li>
+                <!--li><a href="apply-now"> Apply Now!</a></li-->
             </ul>
         </div>
     </nav>                  
