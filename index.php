@@ -229,7 +229,7 @@ foreach ($GetPC as $gsdata) {
                                                 <!--iMAGE-->
                                                 <img src="img/noticeboard//slider4.jpg" width="140" height ="20" alt="" title="" align="left">		  
                                                 <!--TITLE-->
-                                                <a class="ja-title" href="/index.php/news-and-events/103-proponents-say-everyday-math-adds-up-though-some-don-t-understand-how" style="font-size: 16px; margin-left: 10px; display: block;"><h2 class="text-center">eCampus Mid-Semester Meeting</h2></a>
+                                                <a class="ja-title" href="/index.php/news-and-events/103-proponents-say-everyday-math-adds-up-though-some-don-t-understand-how" style="font-size: 16px; margin-left: 10px;"><h2 class="text-center">eCampus Mid-Semester Meeting</h2></a>
                                                 <!--CONTENT DATE-->
                                                 <!--br><span class="ja-createdate" style="font-size: 10px; color: #666666; margin-left: 10px;">Monday, 13 August 2012</span><br-->
                                                 <br><p style="font-size: 14px; color: #333333;" class="text-center">eCampus Mid-Semester Meeting is scheduled for 10th November – 14 November 2018, Venue: Kisumu Campus.<br> <button class="btn btn-primary">View more infomation</button></p>		  		  	  
@@ -239,7 +239,7 @@ foreach ($GetPC as $gsdata) {
                                                 <!--IMAGE-->
                                                 <img src="img/noticeboard/slider3.jpg" alt="Exam Timetable" title="Exam Timetable" align="left" width="140" height ="20">		  
                                                 <!--TITLE-->
-                                                <a class="ja-title" href="/index.php/news-and-events/102-forget-about-the-mandate-let-s-fix-health-care" style="font-size: 16px; margin-left: 10px; display: block; "><h2 class="text-center">Exam Timetable</h2></a>
+                                                <a class="ja-title" href="/index.php/news-and-events/102-forget-about-the-mandate-let-s-fix-health-care" style="font-size: 16px; margin-left: 10px; "><h2 class="text-center">Exam Timetable</h2></a>
                                                 <!--CONTENT-->
                                                 <!--br><span class="ja-createdate" style="font-size: 10px; color: #666666; margin-left: 10px;">Monday, 13 August 2012</span><br-->
                                                 <br><p style="font-size: 14px; color: #333333;" class="text-center">Final version of the examination timetable is out! <br><button class="btn btn-warning">Click here to Download</button></p>		  		    
@@ -250,7 +250,7 @@ foreach ($GetPC as $gsdata) {
                                                 <!--IMAGE-->
                                                 <img src="img/noticeboard/exhibition3.jpg" width="140" height ="20" alt="2019 Graduation List" title="2019 Graduation List" align="left">		  
                                                 <!--TITLE-->
-                                                <a class="ja-title" href="/index.php/news-and-events/101-creative-essay-challenge-inspires-college-community" style="font-size: 16px; margin-left: 10px; display: block; "><h2 class="text-center">2019 Graduation List</h2></a>
+                                                <a class="ja-title" href="/index.php/news-and-events/101-creative-essay-challenge-inspires-college-community" style="font-size: 16px; margin-left: 10px; "><h2 class="text-center">2019 Graduation List</h2></a>
                                                 <!--CONTENT-->
                                                 <!--br><span class="ja-createdate" style="font-size: 10px; color: #666666; margin-left: 10px;">Monday, 13 August 2012</span><br-->					
                                                 <br><p style="font-size: 14px; color: #333333;" class="text-center">We are appealing to students who are due to graduate this year to fill in the graduation form using their official names<br><button class="btn btn-warning">Download it HERE!</button></p>		  		  		  
