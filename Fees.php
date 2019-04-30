@@ -589,14 +589,12 @@ foreach ($GetPC as $gsdata) {
                             <div class="col-md-2 col-sm-1"></div>
                         </div>
                     </div>
-                        <footer class="footer-area">
-                            
-                            <!-- Form Ends -->
+                         <!-- Form Ends -->
                             <?php include_once('include/footerjs.php'); ?>
                             <!-- footer start -->
                             <?php include_once('include/footer.php'); ?>
                             <!-- footer end -->
-                        </footer>
+                       
                     </div>
                 </div>
             </div>
